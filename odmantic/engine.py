@@ -342,8 +342,8 @@ class AIOEngine:
         #noqa: DAR401 TypeError
         -->
         """
-        if not isinstance(instance, Model):
-            raise TypeError("Can only call find_one with a Model class")
+        # if not isinstance(instance, Model):
+        #     raise TypeError("Can only call find_one with a Model class")
 
         async with await self.client.start_session() as s:
             async with s.start_transaction():
